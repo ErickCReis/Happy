@@ -1,0 +1,63 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb",
+        "prettier",
+        "prettier/react",
+        "prettier/@typescript-eslint",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "react/jsx-filename-extension": [
+        0, 
+        { 
+          "allow": "as-needed" 
+        }
+      ],
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "ts": "never",
+          "tsx": "never"
+        }
+      ],
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "no-use-before-define": "off",
+      "jsx-a11y/label-has-associated-control": [ "error", {
+        "required": {
+          "some": [ "nesting", "id"  ]
+        }
+      }]
+    },
+    "settings": {
+      "import/resolver": {
+        "typescript": {}
+      },
+      "react": {
+        "version": "detect"
+      }
+    }
+}
