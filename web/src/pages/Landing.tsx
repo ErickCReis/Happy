@@ -6,8 +6,6 @@ import '../styles/pages/landing.css'
 
 import logoImg from '../images/logo.svg'
 
-// import { Container } from './styles';
-
 const Landing: React.FC = () => {
   return (
     <div id="page-landing">
