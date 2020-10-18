@@ -1,19 +1,19 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { BorderlessButton } from 'react-native-gesture-handler';
-import { Feather } from '@expo/vector-icons'
+import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
- 
+
 interface HeaderProps {
   title: string,
   showCancel?: boolean
 }
 
 const Header: React.FC<HeaderProps> = ({ title, showCancel = true }) => {
-  const { navigate, goBack } = useNavigation()
+  const { navigate, goBack } = useNavigation();
 
   function handleGoBackToHomePage() {
-    navigate('OrphanagesMap')
+    navigate('OrphanagesMap');
   }
 
   return (
@@ -29,11 +29,11 @@ const Header: React.FC<HeaderProps> = ({ title, showCancel = true }) => {
           <Feather name="x" size={24} color="#ff669d" />
         </BorderlessButton>
       ) : (
-        <View/>
+        <View />
       )}
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Nunito_600SemiBold',
     color: '#8fa7b3',
     fontSize: 16,
-  }
-})
+  },
+});
 
 export default Header;
