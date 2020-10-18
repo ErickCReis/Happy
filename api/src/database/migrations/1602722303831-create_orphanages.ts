@@ -19,16 +19,13 @@ export class createOrphanages1602722303831 implements MigrationInterface {
             type: 'varchar',
           },
           {
-            name: 'latitude',
-            type: 'decinal',
-            scale: 10,
-            precision: 2,
+            name: 'latitude', 
+            type: 'varchar',
+
           },
           {
             name: 'longitude',
-            type: 'decinal',
-            scale: 10,
-            precision: 2,
+            type: 'varchar',
           },
           {
             name: 'about',
