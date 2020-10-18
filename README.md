@@ -1,34 +1,40 @@
 <h1 align="center">
-    Happy - NLW#3
+    <img alt="Happy" title="Happy" src=".github/assets/logo.svg" />
 </h1>
 
 <p align="center">
-  <a href="#bookmark-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
+<br>
+
 <p align="center">
-  <img alt="design do projeto" width="650px" src="./.github/assets/happy.png" />
-<p>
+  <img alt="Happy" src=".github/assets/happy.png" width="100%">
+</p>
 
-## :bookmark: Sobre
+## 🚀 Tecnologias
 
-O **Happy** é uma aplicação feita para facilitar o acesso e contado à orfanatos próximos à você.
-  
-Este projeto foi idealizado pensando no **12 de outubro**, onde se comemora o **Dia das Crianças**.
-  
-Essa aplicação foi realizada durante a Next **Level Week #3**, projeto da [Rocketseat](https://rocketseat.com.br/).
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-## :rocket: Tecnologias
-
-- [Typescript](https://www.typescriptlang.org/)
-- [ReactJS](https://reactjs.org/)
 - [Node.js](https://nodejs.org/en/)
-- [React Native](http://facebook.github.io/react-native/)
+- [React](https://reactjs.org)
+- [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
-- [Express](https://expressjs.com/)
-- [Axios](https://github.com/axios/axios)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## 💻 Projeto
+
+O Happy é uma aplicação que conecta pessoas à casas de acolhimento institucional para fazer o dia de muitas crianças mais feliz 💜
+
+## 🔖 Layout
+
+Nos links abaixo você encontra o layout do projeto web e também do mobile. Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
+
+- [Layout Web](https://www.figma.com/file/VrZYAjqux1L6NHCabUXZsz/Happy-Web)
+- [Layout Mobile](https://www.figma.com/file/4ZvnghA1YY7rA8k7p7sVJn/Happy-Mobile)
 
 ## :memo: Licença
 
