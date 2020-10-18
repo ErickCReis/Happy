@@ -9,6 +9,7 @@ import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
 
 import api from '../services/api';
+import { useCallback } from 'react';
 
 interface Orphanage {
   id: number;
@@ -21,11 +22,13 @@ const OrphanagesMap: React.FC = () => {
   const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
   const navigation = useNavigation();
   
-  useFocusEffect(() => {
-    api.get('orphanages').then(response => {
-      setOrphanages(response.data)
-    })
-  }, [])
+  useFocusEffect(
+    useCallback(() => {
+      api.get('orphanages').then(response => {
+        setOrphanages(response.data);
+      });
+    }, [])
+  )
 
   function handleNavigateToOrphanageDetails(id: number) {
     navigation.navigate('OrphanageDetails', { id })
