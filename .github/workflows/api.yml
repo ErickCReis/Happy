@@ -1,0 +1,50 @@
+name: Check, Build e Deploy API
+
+on:
+  push:
+    paths:
+      - 'api/**'
+
+jobs:
+  Lint:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout main
+      uses: actions/checkout@v2
+    
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+
+    - name: Check
+      run: yarn lint
+
+  Build:
+    runs-on: ubuntu-latest
+    needs: Lint
+    steps:
+
+    - name: Checkout main
+      uses: actions/checkout@v2
+    
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+
+    - name: Build
+      run: yarn build
+
+  Deploy:
+    runs-on: ubuntu-latest
+    needs: [Lint, Build]
+    steps:
+      
+      - name: Checkout main
+        uses: actions/checkout@v2
+
+      - name: Deplay
+        uses: akhileshns/heroku-deploy@v3.5.7 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "happy-api-erickreis" #Must be unique in Heroku
+          heroku_email: "erickcorreareis@gmail.com"
+
